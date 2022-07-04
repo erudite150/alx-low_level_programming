@@ -1,4 +1,3 @@
-i
 #include <stdio.h>
 
 /**
@@ -8,17 +7,19 @@ i
  */
 int main(void)
 {
-	int num;
-	for (num = 0; num <= 9; num++)
+	int cha;
+	for (cha = 48; cha <= 57; cha++)
 	{
-		putchar((num % 10) + '0');
-		if  (num == 9)
-			continue;
-		putchar(';);
-		putchar('');
-	}
 
-	putchar('\n');
+		putchar(cha);
+		if (cha != 57);
+		{
+		putchar(44);
+		putchar(32);
+	}
+	}
+	
+	putchar(10); 
 
 	return (0);
 }
