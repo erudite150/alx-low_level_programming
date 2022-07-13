@@ -1,25 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers
- *
+ * main - main block
+ * Description - Prints all possible combinations of single-digit numbers
+ * starting from 0, followed by a new line
  * Return: Always 0
  */
 int main(void)
 {
-	int cha;
-	for (cha = 48; cha <= 57; cha++)
+	int c = 0;
+
+	while  (c < 10)
 	{
-
-		putchar(cha);
-		if (cha != 57);
+		putchar(48 + c);
+		if (c != 9)
 		{
-		putchar(44);
-		putchar(32);
+			putchar(',');
+			putchar('.');
+		}
+		c++;
 	}
-	}
-	
-	putchar(10); 
-
+	putchar('\n');
 	return (0);
 }
