@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
  * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new kline.
+ * Description: get a random number and check its last digit, compare it with 5
  * Return: 0
  */
 int main(void)
 {
-	char c = '0';
+	char c = 'a';
 
 	while (c <= 'z')
 	{
-		putchar(c);
-		c++;
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 	}
 
 	putchar('\n');
